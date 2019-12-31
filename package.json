@@ -1,0 +1,24 @@
+{
+  "name": "pretty-decent-ui",
+  "version": "0.0.1",
+  "description": "ui library with styled-components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mknudsen01/pretty-decent-ui.git"
+  },
+  "author": "mknudsen01@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mknudsen01/pretty-decent-ui/issues"
+  },
+  "homepage": "https://github.com/mknudsen01/pretty-decent-ui#readme",
+  "dependencies": {
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "styled-components": "4.4.1"
+  }
+}
