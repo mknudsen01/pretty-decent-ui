@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import mediaqueries from "../components/mediaqueries"
+import mediaqueries from "./mediaqueries"
 
 const Column = styled.div`
   display: flex;
