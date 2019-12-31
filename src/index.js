@@ -1,14 +1,11 @@
-import CenteredOverlay from './CenteredOverlay'
-import mediaqueries from './mediaqueries'
-import Text from './Text'
-
-
-export const Text;
-export const CenteredOverlay;
-export const mediaqueries;
-
-export default {
-  CenteredOverlay,
-  mediaqueries,
-  Text
-}
+export { default as CenteredOverlay } from './CenteredOverlay'
+export { default as Column } from './Column'
+export { default as ContentContainer } from './ContentContainer'
+export { default as Flex } from './Flex'
+export { default as GlobalStyle } from './GlobalStyle'
+export { default as Hero } from './Hero'
+export { default as HideAtSize } from './HideAtSize'
+export { default as mediaqueries } from './mediaqueries'
+export { default as Row } from './Row'
+export { default as Section } from './Section'
+export { default as Text } from './Text'
