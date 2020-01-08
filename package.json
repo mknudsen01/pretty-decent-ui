@@ -19,6 +19,18 @@
   "dependencies": {
     "react": "16.12.0",
     "react-dom": "16.12.0",
+    "remark": "11.0.2",
+    "remark-preset-lint-recommended": "3.0.3",
+    "remark-react": "6.0.0",
     "styled-components": "4.4.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.7.7",
+    "@storybook/addon-actions": "5.2.8",
+    "@storybook/addon-knobs": "5.2.8",
+    "@storybook/addon-notes": "5.2.8",
+    "@storybook/addons": "5.2.8",
+    "@storybook/react": "5.2.8",
+    "babel-loader": "8.0.6"
   }
 }
