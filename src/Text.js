@@ -4,7 +4,7 @@ import mediaqueries from './mediaqueries';
 const Text = styled.div`
   font-size: ${props => props.size ? props.theme.typography.sizes[props.size] : props.theme.typography.sizes['base']};
   line-height: ${props => props.lineHeight || 'inherit'};
-  color: ${props => props.variant ? props.theme.colors[props.variant] : 'inherit'};
+  color: ${props => props.variant ? props.theme.colors[props.variant][props.shade || 500] : 'inherit'};
   text-align: ${props => props.align || 'left'};
   font-weight: ${props => props.fontWeight || 'normal'};
   text-decoration: ${props => props.textDecoration || 'none'};

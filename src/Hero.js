@@ -5,7 +5,7 @@ const Hero = styled.section`
   height: 100vh;
   position: relative;
   width: 100%;
-  background-color: ${props => props.variant ? props.theme.colors[props.variant] : '#999'};
+  background-color: ${props => props.variant ? props.theme.colors[props.variant][props.shade || 500] : '#999'};
   overflow: hidden;
 `
 
