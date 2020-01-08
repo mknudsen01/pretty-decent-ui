@@ -74,10 +74,31 @@ const GlobalStyle = createGlobalStyle`
   `}
 
 
-
+  /* POSITIONING */
   .relative {position: relative; }
   .absolute {position: absolute; }
   .fixed {position: fixed; }
+
+  /* ABSOLUTE POSITIONING   */
+  /*  TOP/RIGHT/BOTTOM/LEFT */
+  .inset-0      { top: 0; right: 0; bottom: 0; left: 0;}
+  .inset-y-0	  { top: 0; bottom: 0; }
+  .inset-x-0	  { right: 0; left: 0; }
+  .top-0	      { top: 0; }
+  .top-50	      { top: 50%; }
+  .right-0	    { right: 0; }
+  .right-50	    { right: 50%; }
+  .bottom-0	    { bottom: 0; }
+  .bottom-50	  { bottom: 50%; }
+  .left-0	      { left: 0; }
+  .left-50	    { left: 50%; }
+  .inset-auto	  { top: auto; right: auto; bottom: auto; left: auto; }
+  .inset-y-auto {	top: auto; bottom: auto; }
+  .inset-x-auto	{ left: auto; right: auto; }
+  .top-auto	    { top: auto; }
+  .bottom-auto	{ bottom: auto; }
+  .left-auto	  { left: auto; }
+  .right-auto	  { right: auto; }
 
   .top-0 { top: 0; }
   .right-0 { right: 0;}
@@ -124,7 +145,6 @@ const GlobalStyle = createGlobalStyle`
 
   ${props => Object.keys(props.theme.spacing).map((label) => (
     css`
-
       .translate-x-${label} {
         transform: translateX(${props.theme.spacing[label]});
       }
