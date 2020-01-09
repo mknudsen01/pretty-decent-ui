@@ -1,7 +1,7 @@
 import { css, createGlobalStyle } from "styled-components"
 import mediaqueries from "./mediaqueries";
 
-import "./normalize.css"
+// import "./normalize.css"
 
 const GlobalStyle = createGlobalStyle`
   html {
