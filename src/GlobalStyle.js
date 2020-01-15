@@ -27,11 +27,11 @@ const GlobalStyle = createGlobalStyle`
   .rounded-full	{ border-radius: 9999px; }
 
   a {
-    color: ${props => props.theme.colors.secondary};
+    color: ${props => props.theme.colors.secondary[500]};
     transition: 0.3s all ease;
 
     &:hover {
-    color: ${props => props.theme.colors.secondaryDark};
+    color: ${props => props.theme.colors.secondary[700]};
     }
   }
 
@@ -41,10 +41,22 @@ const GlobalStyle = createGlobalStyle`
   .transition-300 { transition: 0.3s all ease; }
   .transition-500 { transition: 0.5s all ease; }
 
-  .text-black { color: ${props => props.theme.colors.black}; }
-  .text-white { color: ${props => props.theme.colors.white}; }
-  .text-primary { color: ${props => props.theme.colors.primary}; }
-  .text-secondary { color: ${props => props.theme.colors.secondary}; }
+  /* SCALE */
+  .hover\\:scale-92:hover { transform: scale(0.92); }
+  .hover\\:scale-94:hover { transform: scale(0.94); }
+  .hover\\:scale-96:hover { transform: scale(0.96); }
+  .hover\\:scale-98:hover { transform: scale(0.98); }
+  .hover\\:scale-100:hover { transform: scale(1); }
+  .hover\\:scale-102:hover { transform: scale(1.02); }
+  .hover\\:scale-104:hover { transform: scale(1.04); }
+  .hover\\:scale-106:hover { transform: scale(1.06); }
+  .hover\\:scale-108:hover { transform: scale(1.08); }
+  .hover\\:scale-110:hover { transform: scale(1.10); }
+
+  .text-black { color: ${props => props.theme.colors.black[500]}; }
+  .text-white { color: ${props => props.theme.colors.white[500]}; }
+  .text-primary { color: ${props => props.theme.colors.primary[500]}; }
+  .text-secondary { color: ${props => props.theme.colors.secondary[500]}; }
   .text-gray700 { color: ${props => props.theme.colors.gray[700]} }
 
   .uppercase { text-transform: uppercase; }
@@ -153,7 +165,19 @@ const GlobalStyle = createGlobalStyle`
         transform: translateX(${props.theme.spacing[label]});
       }
 
+      .hover\\:translate-child-x-${label}:hover > * {
+        transform: translateX(${props.theme.spacing[label]});
+      }
+
       .translate-y-${label} {
+        transform: translateY(${props.theme.spacing[label]});
+      }
+
+      .hover\\:translate-y-${label}:hover {
+        transform: translateY(${props.theme.spacing[label]});
+      }
+
+      .hover\\:translate-child-y-${label}:hover > * {
         transform: translateY(${props.theme.spacing[label]});
       }
 
