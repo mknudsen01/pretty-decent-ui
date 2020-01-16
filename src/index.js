@@ -10,6 +10,7 @@ export { default as Row } from './Row'
 export { default as Section } from './Section'
 export { default as Text } from './Text'
 export { default as Fade } from './Fade'
+export { default as convertFromMarkdown } from './convertFromMarkdown'
 
 export { DisplayOne, DisplayTwo, HeadingOne, HeadingTwo, HeadingThree, HeadingFour, HeadingFive, LeadText, BodyText } from './components/typography'
 export { default as Gradient } from './components/Gradient'
